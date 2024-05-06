@@ -28,7 +28,7 @@ class Connector:
         return
 
     def build_request_params(self, req_params:dict) -> None:
-        unknown_args = [key not in self.allowed_request_args for key in req_params.keys()]
+        unknown_args = [key for key in req_params.keys() if key not in self.allowed_request_args]
         if unknown_args:
             if len(unknown_args) == 1:
                 KeyError(f"The arg '{unknown_args}' is not valid for the requests.Request method")
