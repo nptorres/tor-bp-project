@@ -1,5 +1,5 @@
 # dirs
 *__pycache__
 .venv/
-
+temp/
 #files
