@@ -34,7 +34,7 @@ class Ckan:
             res = self.con.make_request(req_params=req_params)
             self.pkg_info = res.json()
         except Exception as e:
-            self.log.debug(f"CKAN script didn't work: {e}")
+            self.log.log.debug(f"CKAN script didn't work: {e}")
         return
 
     def find_resource_endpoints(self) -> None:
@@ -68,8 +68,8 @@ class Ckan:
     def export_csv(self, path) -> str:
         try:
             res = self.con.make_request(req_params=self.endpoint_params["export"][0])
-            with open(path, "w") as f:
+            with open(path, "w+") as f:
                 f.write(res.text)
         except Exception as e:
-            self.log.debug(f"CKAN script couldn't write csv: {e}")
+            self.log.log.debug(f"CKAN script couldn't write csv: {e}")
         return
