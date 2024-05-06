@@ -1,5 +1,5 @@
-from connector import Connector
-from log import Log
+from helpers.connector import Connector
+from helpers.log import Log
 
 
 class Ckan:

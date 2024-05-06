@@ -1,7 +1,7 @@
 import inspect
 import requests
 from retrying import retry
-from log import Log
+from helpers.log import Log
 
 
 class Connector:
