@@ -14,8 +14,14 @@ Extract live data from [the Toronto Open Data portal](https://open.toronto.ca/):
 4. calculate a neighbourhood score of permit costs if applicable and number of permits as a function of neighbourhood population
 ### Visualization
 Create a clorpleth (geo heat map) with [OSM and Leaflet](https://leafletjs.com/examples/choropleth/)). Plot data onto a map: colour ramp based on the neighbourhood renovation score, where each shape is the neighbourhood. Hovering over each shape should provide neighbourhood statistics in a popup.
-## Code
 
+## Code
 ### Language
 Python
 
+## Current work
+### 2024-06-25
+Built initial exploratory transformation pipelines and analysis. Using these as a base, I will create data pipelines to deliver the transformations for the heatmap and clustermap analytics I created.
+
+## License
+Copyright 2024 Nikko Torres, under the [CC BY-NC License](https://creativecommons.org/licenses/by-nc/4.0/)
