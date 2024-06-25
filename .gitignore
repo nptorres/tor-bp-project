@@ -4,3 +4,4 @@
 temp/
 data/
 #files
+.DS_Store
